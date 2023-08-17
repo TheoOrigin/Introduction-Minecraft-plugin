@@ -1,0 +1,11 @@
+name: stalaplugin
+version: 1.0
+author: Stalagtik
+main: fr.stalagtik.baseplugin.Main
+commands:
+  discord:
+    description: discord link
+    permission: discord.use
+  alert:
+    description: server alert
+    permission: serveralert.use
