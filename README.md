@@ -18,10 +18,10 @@ A basic Bukkit/Spigot Minecraft server plugin written in Java, serving as an int
 
 The plugin structure and commands are declared in **[plugin.yml](file:///C:/Users/theob/Desktop/Project/Introduction-Minecraft-plugin/plugin.yml)**:
 ```yaml
-name: BasePlugin
+name: theooriginplugin
 version: 1.0
 author: TheoOrigin
-main: fr.stalagtik.baseplugin.Main
+main: fr.theoorigin.baseplugin.Main
 api-version: 1.16
 commands:
   discord:
@@ -36,5 +36,5 @@ commands:
 - **Language**: Java
 - **API**: Bukkit/Spigot API (1.16+)
 - **Source Code**:
-  - **[Main.java](file:///C:/Users/theob/Desktop/Project/Introduction-Minecraft-plugin/src/fr/stalagtik/baseplugin/Main.java)**: Entry point registers command executors.
-  - **[CommandTest.java](file:///C:/Users/theob/Desktop/Project/Introduction-Minecraft-plugin/src/fr/stalagtik/baseplugin/commands/CommandTest.java)**: Implements command execution logic and chat formatting.
+  - **[Main.java](file:///C:/Users/theob/Desktop/Project/Introduction-Minecraft-plugin/src/fr/theoorigin/baseplugin/Main.java)**: Entry point registers command executors.
+  - **[CommandTest.java](file:///C:/Users/theob/Desktop/Project/Introduction-Minecraft-plugin/src/fr/theoorigin/baseplugin/commands/CommandTest.java)**: Implements command execution logic and chat formatting.

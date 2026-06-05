@@ -1,7 +1,7 @@
-name: stalaplugin
+name: theooriginplugin
 version: 1.0
-author: Stalagtik
-main: fr.stalagtik.baseplugin.Main
+author: TheoOrigin
+main: fr.theoorigin.baseplugin.Main
 commands:
   discord:
     description: discord link
