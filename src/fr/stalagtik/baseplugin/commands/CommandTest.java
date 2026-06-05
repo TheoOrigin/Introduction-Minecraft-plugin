@@ -7,8 +7,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-//choses a savoir :
-//récupérer le nom d'un joueur : player.getName()   NE PAS OUBLIER D'IMPORTER LA CLASSE
+// Things to know:
+// get player name: player.getName()  DON'T FORGET TO IMPORT THE CLASS
 
 
 
@@ -16,32 +16,32 @@ import org.bukkit.entity.Player;
 
 public class CommandTest implements CommandExecutor {
 
-	//la ou il y a les commandes
+	// where commands are handled
 	@Override 
 	public boolean onCommand(CommandSender sender, Command cmd, String msg, String[] args) {
 		
 		if(sender instanceof Player) {
-			//defini player qui envoie la commande
+			// define the player who sent the command
 			Player player = (Player)sender;
 			
-			//si la commande c'est "discord" (ne pas oublier de mettre dans plugin.yml)
+			// if the command is "discord" (don't forget to add it to plugin.yml)
 			if(cmd.getName().equalsIgnoreCase("discord")) {
-				player.sendMessage("§6Rejoint le discord ! §9https://discord.gg/nmKfJeRndv");
+				player.sendMessage("§6Join our discord! §9https://discord.gg/nmKfJeRndv");
 				return true;
 			}
 			
-			//si la commande c'est "alert" (ne pas oublier de mettre dans plugin.yml)
-			//broadcast c'est pour afficher sur tout le serveur (visible par tout le monde)
+			// if the command is "alert" (don't forget to add it to plugin.yml)
+			// broadcast is used to display a message to the entire server (visible to everyone)
 			if(cmd.getName().equalsIgnoreCase("alert")) {
-				//on affiche le joueur qui a tapé la commande
-				//Bukkit.broadcastMessage("["+ player.getName() + "] §6Trop bien le broadcast");
+				// display the player who typed the command
+				//Bukkit.broadcastMessage("["+ player.getName() + "] §6Very cool broadcast");
 				
-				//alert si pas d'arguments :
+				// alert if no arguments:
 				if(args.length == 0) {
 					player.sendMessage("/alert <message>");
 				}
 				
-				//avec des argument :
+				// with arguments:
 				if(args.length >= 1) {
 					StringBuilder message = new StringBuilder();
 					for(String part : args) {
