@@ -4,7 +4,6 @@ A basic Bukkit/Spigot Minecraft server plugin written in Java, serving as an int
 
 ## Authors
 - TheoOrigin
-- School Project Team
 
 ---
 
